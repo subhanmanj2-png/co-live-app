@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" id="app-html" class="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Co-Live | Payments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 flex flex-col md:flex-row min-h-screen">
+    <div id="sidebar-root"></div>
+    <main class="flex-1 h-screen overflow-y-auto p-10 max-w-5xl mx-auto">
+        <h1 class="text-4xl font-black mb-10 italic">Wallet & Payments</h1>
+        <div class="bg-indigo-600 text-white p-10 rounded-[40px] shadow-xl mb-10 flex justify-between items-center">
+            <div>
+                <p class="opacity-80 font-bold tracking-widest text-sm mb-2">UPCOMING RENT DUE</p>
+                <p class="text-5xl font-black">$480.00</p>
+                <p class="mt-2 font-medium">Due on 1st of next month</p>
+            </div>
+            <button class="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-black text-lg hover:scale-105 transition">Pay Now</button>
+        </div>
+        <h2 class="text-2xl font-black mb-6">Transaction History</h2>
+        <div class="bg-white dark:bg-zinc-900 rounded-[30px] border dark:border-zinc-800 overflow-hidden shadow-sm">
+            <table class="w-full text-left border-collapse">
+                <tr class="border-b dark:border-zinc-800 text-sm opacity-50"><th class="p-6 font-bold">DATE</th><th class="p-6 font-bold">DESCRIPTION</th><th class="p-6 font-bold">AMOUNT</th><th class="p-6 font-bold">STATUS</th></tr>
+                <tr class="border-b dark:border-zinc-800 font-medium"><td class="p-6">Oct 1</td><td class="p-6">Rent - Downtown Loft</td><td class="p-6 font-bold">-$480.00</td><td class="p-6 text-green-500 font-bold">Paid</td></tr>
+                <tr class="font-medium"><td class="p-6">Sep 1</td><td class="p-6">Security Deposit</td><td class="p-6 font-bold">-$200.00</td><td class="p-6 text-green-500 font-bold">Escrow Held</td></tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
